@@ -30,4 +30,6 @@ public class Areas {
     @OneToMany(mappedBy = "id_pessoa")
     @JsonIgnore
     private List<Pessoa> pessoa;
+
+    //Getters e Setters estão sendo produzidos pela anotation do lombok
 }

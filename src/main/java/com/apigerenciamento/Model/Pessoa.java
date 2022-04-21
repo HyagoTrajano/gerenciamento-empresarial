@@ -1,16 +1,12 @@
 package com.apigerenciamento.Model;
 
-import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -40,4 +36,6 @@ public class Pessoa {
     @ManyToOne
     @JoinColumn(name = "id_pes_proj")
     private Projeto projeto;
+
+    //Getters e Setters estão sendo produzidos pela anotation do lombok
 }
